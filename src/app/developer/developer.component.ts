@@ -17,8 +17,6 @@ export class DeveloperComponent implements OnInit {
     this.devs = [
       new Developer('Carla', 'Smith', 20, 'male', 'je suis pas tres frais', [
         new Skill('Golazo', 'Inshallah', 'Un jour je mettrai une photo')]),
-      // new Developer('Rey', 'Smith', 30, 'male', 'je suis pas tres frais'),
-      // new Developer('Chien', 'Pute', 20, 'femdom', 'je suis pas tres frais'),
     ];
   }
 }

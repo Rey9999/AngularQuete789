@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myFirstApp';
+  onomatopoeiaList : string[] = ['o','a','v'];
+  onReceiveNewOnomatopia(event:string) : void {
+    this.onomatopoeiaList.push(event) 
+
+  }
 }

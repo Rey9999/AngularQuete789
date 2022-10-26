@@ -23,5 +23,5 @@
 
 </form>
 
-<app-magic-oven [startCooking]="isCooked" [numberOfCookies]="numberOfCookies" [flour]="flourQuantity" [salt]="saltQuantity" [sugar]="sugarQuantity" [egg]="eggQuantity">
+<app-magic-oven [startCooking]="isCooked" [numberOfCookies]="numberOfCookies" [flour]="flourQuantity" [salt]="saltQuantity" [sugar]="sugarQuantity" [egg]="eggQuantity" (cookies)="onGetCookies($event)">
 </app-magic-oven>

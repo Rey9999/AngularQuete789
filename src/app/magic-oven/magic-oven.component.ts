@@ -24,6 +24,15 @@ export class MagicOvenComponent implements OnInit {
 
   @Input()
   startCooking: boolean = false;
+
+  // in app-magic-oven
+
+  @Output()
+  cookies : EventEmitter<number> = new EventEmitter(); 
+
+  sendCookies() {
+    this.cookies.emit(this.numberOfCookies);
+  }
   
   constructor() { }
 

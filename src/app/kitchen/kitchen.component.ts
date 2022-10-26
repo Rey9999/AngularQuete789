@@ -13,6 +13,7 @@ export class KitchenComponent implements OnInit {
   numberOfCookies: number = 0;
 
   isCooked: boolean = false;
+  cookiesCooked: number = 0;
 
   constructor() {}
 
@@ -20,6 +21,10 @@ export class KitchenComponent implements OnInit {
 
   startCooking() {
     this.isCooked = true;
+  }
+
+  onGetCookies(event: number): void {
+    this.cookiesCooked =+ event;
   }
 
 }
